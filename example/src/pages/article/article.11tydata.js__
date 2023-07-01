@@ -1,0 +1,18 @@
+module.exports = {
+  pagination: {
+    data: 'collections.articles',
+    size: 1,
+    alias: 'article'
+  },
+
+  eleventyComputed: {
+    permalink(data) {
+      return `/articles/${data.article.fileSlug}/`
+    },
+
+    articleData(data) {
+      const { article } = data
+      return article.data
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@web-alchemy/eleventy-plugin-custom-markdown",
+  "version": "0.0.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "linkedom": "^0.14.26",
+    "markdown-it": "^13.0.1"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "markdown"
+  ]
+}

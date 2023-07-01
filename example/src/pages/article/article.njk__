@@ -1,0 +1,21 @@
+<h1 class="title">
+  {{ title | safe }}
+</h1>
+
+{% if excerpt %}
+  <div class="excerpt">
+    {{ excerpt | safe }}
+  </div>
+{% endif %}
+
+<h2 class="heading">
+  {{ heading }}
+</h2>
+
+<pre class="categories">
+  {{ categories }}
+</pre>
+
+<div class="content">
+  {{ content | safe }}
+</div>
